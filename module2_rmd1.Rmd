@@ -3,9 +3,9 @@ title: "module2 - R markdown document 1"
 author: "Oussama Kadded"
 date: "21/04/2020"
 output:
-  html_document: default
-  pdf_document: default
   word_document: default
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -38,3 +38,12 @@ knitr::kable(head(cars))
 
 ## insert equations
 $$ y = \beta_0 + \beta_1x $$
+
+
+## insert footnotes: 
+here is a footnote [^1] and another [^longnote]
+
+here is an inline footnote ^[inline notes are easier to write, since you don't have to pick an identifier and move down to type the note.]
+
+[^1]: here is the footnote.
+[^longnote]: here's one with multiple blocks.
